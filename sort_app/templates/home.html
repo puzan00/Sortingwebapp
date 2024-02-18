@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <div class="container mt-5 text-center">
+        <h1 class="display-4 mb-4">Sorting Algorithms Web App</h1>
+        <p class="lead mb-5">Choose a sorting algorithm:</p>
+        
+        <div class="d-flex justify-content-center">
+            <a href="{% url 'bubble_sort' %}" class="btn btn-primary btn-lg mx-2">Bubble Sort</a>
+            <a href="{% url 'selection_sort' %}" class="btn btn-success btn-lg mx-2">Selection Sort</a>
+            <a href="{% url 'insertion_sort' %}" class="btn btn-info btn-lg mx-2">Insertion Sort</a>
+        </div>
+    </div>
+{% endblock %}

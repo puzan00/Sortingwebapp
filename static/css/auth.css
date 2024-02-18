@@ -1,0 +1,35 @@
+.my-form {
+    margin-top: 50px;
+}
+
+.login-form,
+.register-form {
+    padding: 20px;
+    border: 1px solid #e5e5e5; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #d64545, #5e88fc); /* Adjusted gradient colors */
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color:  #4671e9; /* Adjusted primary color */
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #1c57b0; 
+}
+
+.btn-secondary {
+    background-color: #696e74;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}

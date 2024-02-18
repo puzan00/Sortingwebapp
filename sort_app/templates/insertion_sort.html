@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-body">
+                <h2 class="card-title display-4 mb-4">Insertion Sort</h2>
+                <form method="post" action="" class="needs-validation" novalidate>
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="unsorted_list">Enter a list of comma-separated integers:</label>
+                        <input type="text" class="form-control" name="unsorted_list" placeholder="e.g., 5, 2, 8, 1" required>
+                        <div class="invalid-feedback">
+                            Please enter a valid list of integers.
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sort</button>
+                </form>
+
+                {% if sorted_list %}
+                    <div class="mt-4">
+                        <h3 class="card-subtitle mb-3">Sorted Result:</h3>
+                        <div class="card-text">
+                            <p class="lead">Sorted List: {{ sorted_list }}</p>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
